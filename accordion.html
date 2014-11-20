@@ -21,11 +21,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>
 		(function(){
-			var dd = $('dd');
-			console.log(dd);
-			dd.hide();
+			$('dd').filter(':nth-child(n+4)').addClass('hide');
 
-
+			$('dl').on('mouseover', 'dt', function(){
+				$(this)
+					.next()
+						.slideDown(200)
+							.siblings('dd')
+								.slideUp(200);
+			});
 		})();
 	</script>
 
