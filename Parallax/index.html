@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<section class="sec_1">
+		<div class="header_text">
+			Header text
+		</div>
+
+	</section>
+
+	<section class="sec_2">
+		<img src="img/W4SUQCSRC9.jpg" alt="slide">
+	</section>
+
+	<section>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim maiores quam dicta ipsum unde est repellat provident sint, dolorum impedit consequuntur iste, quas nesciunt, commodi eligendi blanditiis! Animi dicta fugit ipsa velit praesentium aut consectetur harum adipisci, neque, recusandae quos assumenda reprehenderit est aliquam! Animi autem, omnis! Consequuntur, nemo!
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(window).scroll(function () {
+			var sctTop = $(this).scrollTop();
+
+			$(".header_text").css({
+				"transform": "translate(0%, " + sctTop + "%"
+			});
+
+			$(".sec_2").css({
+				"transform": "translate(0%, -" + sctTop / 20 + "%"
+			});
+		});
+	</script>
+
+</body>
+
+</html>

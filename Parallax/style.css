@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+}
+
+section{
+	height: 100vh;
+	background-color: dimgray;
+	position: relative;
+	overflow: hidden;
+}
+
+.sec_1{
+	background-image: url(img/RLU4BWUZHK.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.sec_2 img{
+	position: absolute;
+	width: 100%;
+}
+
+.header_text{
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -120px;
+	margin-top: -20px;
+	font-weight: bold;
+	font-family: "Arial", sans-serif;
+	font-size: 40px;
+	color: #fff;
+	height: 39px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 240px;
+}
