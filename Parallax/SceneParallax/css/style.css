@@ -1,0 +1,52 @@
+body {
+	overflow: hidden;
+}
+
+.scene {
+	background: #E6B64A;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	height: 450px;
+	width: 400px;
+}
+
+.scene > div {
+	position: absolute;
+	bottom: 0;
+}
+
+.clouds {
+	background: url(../img/clouds.png) no-repeat center;
+	width: 245px;
+	height: 133px;
+	left: 20%;
+	top: 40px;
+	z-index: 100;
+}
+
+.sun {
+	background: url(../img/sun.png) no-repeat center;
+	width: 34px;
+	height: 34px;
+	left: 25%;
+	top: 70px;
+	z-index: 90;
+}
+
+.baloon {
+	background: url(../img/baloon.png) no-repeat center;
+	width: 129px;
+	height: 187px;
+	left: 40%;
+	top: 25%;
+}
+
+.ground {
+	background: url(../img/ground.png) no-repeat center;
+	width: 308px;
+	height: 217px;
+	left: 15%;
+	bottom: 50px;
+}
