@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font: 400 1em/1.2em Arial, Tahoma, sans-serif;
+	color: #fff;
+}
+
+header, footer{
+	padding: 200px 0;
+	background: #222;
+}
+
+section{
+	background: #7295C9;
+	padding: 50px;
+	color: #3d3d3d;
+}
+
+.bl{
+	float: left;
+	width: 150px;
+	margin: 0 15px;
+	background: #D1DCED;
+	padding: 50px 10px;
+	border-radius: 50%;
+}
+
+.mid{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.number{
+	font-size: 2em;
+	padding: 0 0 25px;
+	font-weight: bold;
+}
+
+footer{
+  padding: 200px 0 2000px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
